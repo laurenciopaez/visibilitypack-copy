@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
     <head>
       <title>Visibility Pack</title>
     </head>
-    <body>
+    <body  className="bg-gradient-to-b from-vivid-purple to-midnight">
       <ThemeProvider
       attribute="class"
       defaultTheme="light"
@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
       minBreakpoint= "xs">
         <NextUIProvider>
           <ReduxProvider>
-            <div className="flex w-screen font-serif">
+            <div className="flex w-screen font-roboto text-var(--foreground-rgb)">
               {path === "/" ? null : <div> </div>} {children}
             </div>
           </ReduxProvider>
