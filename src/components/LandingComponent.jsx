@@ -7,6 +7,7 @@ import styles from '../components/styles/LandingPage.module.css'
 
 const LandingPage = () => {
     return (
+        <div className="bg-gradient-to-b from-vivid-purple to-midnight overflow-hidden ">
         <div className={`w-full flex flex-col justify-center items-center ${styles['landing-page']}`} style={{ backgroundImage: 'url("https://visibilitypack.es/wp-content/uploads/2021/02/visibilitypack0-1.png")', backgroundSize: "500px", backgroundPosition: "85% 20%", backgroundRepeat: "no-repeat"}}>
             <HeaderComp/>
             <div className="w-[70%] h-70% flex flex-col justify-center text-center items-center mt-40">
@@ -28,6 +29,14 @@ const LandingPage = () => {
                 <Network  title="YouTube" />
                 <Network  title="Tik Tok" />
             </div>
+        </div>
+        <div className={`h-screen ${styles['second-part']}`}>
+        <div className={styles['waves2']}>
+            <div className={`${styles['wave']} ${styles['a']}`}></div>
+                <div className={`${styles['wave']}  ${styles['b']}`}></div>
+                <div className={`${styles['wave']}  ${styles['c']}`}></div>
+            </div>
+        </div>
         </div>
     )
 }
