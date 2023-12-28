@@ -35,7 +35,7 @@ const Network = ({ title }) => {
 
   return (
     <div
-      className="bg-white-700 rounded-lg shadow-xl border-2 flex flex-col px-8 gap-3 justify-center items-center pb-2 bg-white"
+      className="bg-white-700 rounded-lg shadow-xl border-2 flex flex-col px-8 gap-3 justify-center items-center pb-2 bg-white w-1/5 pt-3"
       style={{ color: `${color}` }}
     >
       {title === "Instagram" && (
@@ -54,21 +54,21 @@ const Network = ({ title }) => {
           style={{ color: "violet", width: "2em", height: "2em" }}
         />
       )}
-      <h1>{title}</h1>
+      <h1 className="sm:text-base md:text-lg lg:text-xl ">{title}</h1>
       <Button
-        className="text-lg font-normal bg-white border-2"
+        className="sm:text-sm md:text-base lg:text-lg font-normal bg-white border-2"
         style={{ color: `${color}`, borderColor: `${color}` }}
       >
         Seguidores
       </Button>
       <Button
-        className="text-lg font-normal bg-white border-2"
+        className="sm:text-sm md:text-base lg:text-lg  font-normal bg-white border-2"
         style={{ color: `${color}`, borderColor: `${color}` }}
       >
         Likes
       </Button>
       <Button
-        className="text-lg font-normal bg-white border-2"
+        className="sm:text-sm md:text-base lg:text-lg  font-normal bg-white border-2"
         style={{ color: `${color}`, borderColor: `${color}` }}
       >
         Views
