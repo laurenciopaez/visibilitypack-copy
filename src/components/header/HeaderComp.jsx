@@ -24,7 +24,7 @@ const HeaderComp = () => {
 
   return (
     <>
-      <Navbar expand="lg" className="bg-body-tertiary w-full flex flex-row ">
+      <Navbar expand="lg" className="bg-body-tertiary w-full flex flex-row">
         <Container className="w-full">
           <Image
             src="https://visibilitypack.es/wp-content/uploads/2021/02/cropped-visibility-pack-dek353-1.png"

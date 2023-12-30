@@ -6,39 +6,44 @@ import Network from "./comps/Network";
 import styles from "../components/styles/LandingPage.module.css";
 import ActionsCalls from "./comps/ActionsCalls";
 import ActionsCallsNet from "./comps/ActionsCallsNet";
+import { Image } from "react-bootstrap";
 
 const LandingPage = () => {
   return (
-    <div className="bg-gradient-to-b from-vivid-purple to-midnight overflow-hidden -z-20  ">
+    <div className="   ">
       <div
-        className={`w-full flex flex-col justify-center items-center ${styles["landing-page"]}     `}
-        style={{
-          backgroundImage:
-            'url("https://visibilitypack.es/wp-content/uploads/2021/02/visibilitypack0-1.png")',
-          backgroundSize: "500px",
-          backgroundPosition: "85% 20%",
-          backgroundRepeat: "no-repeat",
-        }}
+        className={`w-full flex flex-col justify-center items-center bg-gradient-to-b from-vivid-purple to-midnight ${styles["landing-page"]}     `}
       >
         <HeaderComp />
-        <div className="w-[70%] h-70% flex flex-col justify-center text-center items-center mt-40">
-          <h1 className="text-white font-semibold">
-            La plataforma mas utilizada
-          </h1>
-          <h1 className="text-white font-semibold">
-            Por todos los influencers
-          </h1>
-          <Button className="text-pink-500 border-2 border-pink-500 w-1/4 font-extralight bg-white rounded-2xl py-1 px-2 my-4">
-            Descubre Nuestros Servicios
-          </Button>
+
+        <div className="w-[80%] h-70% flex flex-row justify-center text-center items-center mt-20">
+          <div className="flex flex-col">
+            <h1 className="text-white font-semibold">
+              La plataforma mas utilizada
+            </h1>
+            <h1 className="text-white font-semibold">
+              Por todos los influencers
+            </h1>
+            <Button className="text-pink-500 border-2 border-pink-500 font-extralight bg-white rounded-2xl p-2 my-4 w-1/2 mx-auto">
+              Descubre Nuestros Servicios
+            </Button>
+          </div>
+
+          <div>
+            <Image
+              src="https://visibilitypack.es/wp-content/uploads/2021/02/visibilitypack0-1.png"
+              width="500px"
+            />
+          </div>
         </div>
+
         <div className={styles["waves"]}>
           <div className={`${styles["wave"]} ${styles["a"]}`}></div>
           <div className={`${styles["wave"]}  ${styles["b"]}`}></div>
           <div className={`${styles["wave"]}  ${styles["c"]}`}></div>
         </div>
 
-        <div className="flex flex-row gap-2 mx-auto justify-center items-center pb-10">
+        <div className="flex flex-row gap-3 mx-auto justify-center items-center pb-10 z-10 sm:w-[80%] md:w-[80%] lg:w-[60%]" >
           <Network title="Instagram" />
           <Network title="Facebook" />
           <Network title="YouTube" />
@@ -60,7 +65,7 @@ const LandingPage = () => {
           >
             ¿Por qué elegir Visibility Pack?
           </h1>
-          <div className="flex flex-row justify-center mt-5 mx-auto xl:px-56 z-10">
+          <div className="flex flex-row justify-center mt-5 mx-auto xl:px-56">
             <ActionsCalls
               index="1"
               title="Resultados garantizados"
@@ -81,12 +86,24 @@ const LandingPage = () => {
         <div
           className={`${styles["skewed"]} mt-20  bg-gradient-to-b from-midnight via-vivid-purple to-midnight`}
         >
-          <div className={`flex flex-row mx-[10%] gap-1 items-center pt-10 ${styles['revertSkewed']}`}>
+          <div
+            className={`flex flex-row mx-[10%] gap-1 items-center pt-10 ${styles["revertSkewed"]}`}
+          >
             <ActionsCallsNet title="Twitter" />
             <ActionsCallsNet title="Spotify" />
             <ActionsCallsNet title="Twitch" />
           </div>
+
+          <div className="w-full h-10 bg-white mt-20">
+              <div   className={`flex flex-row mx-[10%] gap-1 items-center pt-10 ${styles["revertSkewed"]}`}>
+
+              </div>
         </div>
+        </div>
+
+ 
+
+
       </div>
     </div>
   );

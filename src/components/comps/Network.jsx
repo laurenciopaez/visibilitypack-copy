@@ -9,7 +9,6 @@ import {
 
 const Network = ({ title }) => {
   const [color, setColor] = useState("");
-  const [icon, setIcon] = useState("");
 
   useEffect(() => {
     const handleColor = (title) => {
@@ -35,40 +34,44 @@ const Network = ({ title }) => {
 
   return (
     <div
-      className="bg-white-700 rounded-lg shadow-xl shadow-black border-2 flex flex-col px-8 gap-3 justify-center items-center pb-2 bg-white pt-3"
+      className="bg-white-700 rounded-lg shadow-lg shadow-black border-2 border-blue-900 flex flex-col px-8 gap-3 justify-center items-center pb-2 bg-white pt-3 w-1/2"
       style={{ color: `${color}` }}
     >
       {title === "Instagram" && (
         <CiInstagram
-          style={{ color: "#b45309", width: "2em", height: "2em" }}
+          style={{ color: "#b45309" }}
+          className="sm:w-[2em] md:w-[2em] lg:w-[3em] sm:h-[2em] md:h-[2em] lg:h-[3em] xl:w-[4em] xl:h-[4em]"
         />
       )}
       {title === "Facebook" && (
-        <CiFacebook style={{ color: "blue", width: "2em", height: "2em" }} />
+        <CiFacebook style={{ color: "blue" }}
+        className="sm:w-[2em] md:w-[2em] lg:w-[3em] sm:h-[2em] md:h-[2em] lg:h-[3em] xl:w-[4em] xl:h-[4em]" />
       )}
       {title === "YouTube" && (
-        <CiYoutube style={{ color: "red", width: "2em", height: "2em" }} />
+        <CiYoutube style={{ color: "red"}}
+        className="sm:w-[2em] md:w-[2em] lg:w-[3em] sm:h-[2em] md:h-[2em] lg:h-[3em] xl:w-[4em] xl:h-[4em]" />
       )}
       {title === "Tik Tok" && (
         <CiMusicNote1
-          style={{ color: "violet", width: "2em", height: "2em" }}
+          style={{ color: "violet" }}
+          className="sm:w-[2em] md:w-[2em] lg:w-[3em] sm:h-[2em] md:h-[2em] lg:h-[3em] xl:w-[4em] xl:h-[4em]"
         />
       )}
       <h1 className="sm:text-base md:text-lg lg:text-xl ">{title}</h1>
       <Button
-        className="sm:text-sm md:text-base lg:text-lg font-normal bg-white border-2"
+        className="sm:text-sm md:text-base lg:text-lg font-normal bg-white border-2 hover:scale-105" 
         style={{ color: `${color}`, borderColor: `${color}` }}
       >
         Seguidores
       </Button>
       <Button
-        className="sm:text-sm md:text-base lg:text-lg  font-normal bg-white border-2"
+        className="sm:text-sm md:text-base lg:text-lg  font-normal bg-white border-2 hover:scale-105"
         style={{ color: `${color}`, borderColor: `${color}` }}
       >
         Likes
       </Button>
       <Button
-        className="sm:text-sm md:text-base lg:text-lg  font-normal bg-white border-2"
+        className="sm:text-sm md:text-base lg:text-lg  font-normal bg-white border-2  hover:scale-105"
         style={{ color: `${color}`, borderColor: `${color}` }}
       >
         Views

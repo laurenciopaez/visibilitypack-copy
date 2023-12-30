@@ -11,13 +11,13 @@ const ActionsCalls = ({ title, index, text }) => {
     const handleColor = (index) => {
       switch (index) {
         case "1":
-          setColor("pink");
+          setColor("#FF00FF");
           break;
         case "2":
           setColor("blue");
           break;
         case "3":
-          setColor("#9b51e0");
+          setColor("#8A2BE2");
           break;
         default:
           break;
@@ -32,14 +32,14 @@ const ActionsCalls = ({ title, index, text }) => {
     >
       {index === "1" && (
         <BsGraphUpArrow
-          style={{ color: "pink", width: "3em", height: "3em" }}
+          style={{ color: "#FF00FF ", width: "3em", height: "3em" }}
         />
       )}
       {index === "2" && (
         <CgSandClock style={{ color: "blue", width: "3em", height: "3em" }} />
       )}
       {index === "3" && (
-        <FaRegThumbsUp style={{ color: "#9b51e0", width: "3em", height: "3em" }} />
+        <FaRegThumbsUp style={{ color: "#8A2BE2", width: "3em", height: "3em" }} />
       )}
       <h1 className="sm:text-xl md:text-2xl lg:text-3xl text-center font-semibold"   style={{ color: `${color}` }}>{title}</h1>
       <p className="text-xl font-normal text-center ">{text}</p>
