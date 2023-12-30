@@ -1,44 +1,95 @@
-'use client'
+"use client";
 import React from "react";
 import HeaderComp from "./header/HeaderComp";
 import { Button } from "@nextui-org/react";
 import Network from "./comps/Network";
-import styles from '../components/styles/LandingPage.module.css'
+import styles from "../components/styles/LandingPage.module.css";
+import ActionsCalls from "./comps/ActionsCalls";
+import ActionsCallsNet from "./comps/ActionsCallsNet";
 
 const LandingPage = () => {
-    return (
-        <div className="bg-gradient-to-b from-vivid-purple to-midnight overflow-hidden ">
-        <div className={`w-full flex flex-col justify-center items-center ${styles['landing-page']}`} style={{ backgroundImage: 'url("https://visibilitypack.es/wp-content/uploads/2021/02/visibilitypack0-1.png")', backgroundSize: "500px", backgroundPosition: "85% 20%", backgroundRepeat: "no-repeat"}}>
-            <HeaderComp/>
-            <div className="w-[70%] h-70% flex flex-col justify-center text-center items-center mt-40">
-                <h1 className="text-white font-semibold">
-                    La plataforma mas utilizada
-                </h1>
-                <h1 className="text-white font-semibold">Por todos los influencers</h1>
-                <Button className="text-pink-500 border-2 border-pink-500 w-1/4 font-extralight bg-white rounded-2xl py-1 px-2 my-4">Descubre Nuestros Servicios</Button>
-            </div>
-            <div className={styles['waves']}>
-            <div className={`${styles['wave']} ${styles['a']}`}></div>
-                <div className={`${styles['wave']}  ${styles['b']}`}></div>
-                <div className={`${styles['wave']}  ${styles['c']}`}></div>
-            </div>
+  return (
+    <div className="bg-gradient-to-b from-vivid-purple to-midnight overflow-hidden -z-20  ">
+      <div
+        className={`w-full flex flex-col justify-center items-center ${styles["landing-page"]}     `}
+        style={{
+          backgroundImage:
+            'url("https://visibilitypack.es/wp-content/uploads/2021/02/visibilitypack0-1.png")',
+          backgroundSize: "500px",
+          backgroundPosition: "85% 20%",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        <HeaderComp />
+        <div className="w-[70%] h-70% flex flex-col justify-center text-center items-center mt-40">
+          <h1 className="text-white font-semibold">
+            La plataforma mas utilizada
+          </h1>
+          <h1 className="text-white font-semibold">
+            Por todos los influencers
+          </h1>
+          <Button className="text-pink-500 border-2 border-pink-500 w-1/4 font-extralight bg-white rounded-2xl py-1 px-2 my-4">
+            Descubre Nuestros Servicios
+          </Button>
+        </div>
+        <div className={styles["waves"]}>
+          <div className={`${styles["wave"]} ${styles["a"]}`}></div>
+          <div className={`${styles["wave"]}  ${styles["b"]}`}></div>
+          <div className={`${styles["wave"]}  ${styles["c"]}`}></div>
+        </div>
 
-            <div className="flex flex-row gap-4 mx-40 m-auto w-[80%] justify-center items-center">
-                <Network title="Instagram" />
-                <Network title="Facebook" />
-                <Network  title="YouTube" />
-                <Network  title="Tik Tok" />
-            </div>
+        <div className="flex flex-row gap-2 mx-auto justify-center items-center pb-10">
+          <Network title="Instagram" />
+          <Network title="Facebook" />
+          <Network title="YouTube" />
+          <Network title="Tik Tok" />
         </div>
-        <div className={`h-screen ${styles['second-part']}`}>
-        <div className={styles['waves2']}>
-            <div className={`${styles['wave']} ${styles['a']}`}></div>
-                <div className={`${styles['wave']}  ${styles['b']}`}></div>
-                <div className={`${styles['wave']}  ${styles['c']}`}></div>
-            </div>
+      </div>
+      <div className={` ${styles["second-part"]} h-screen  `}>
+        <div className="absolute inset-0 bg-gradient-to-b -z-10 from-blue-500 via-white to-white"></div>
+        <div className={styles["waves2"]}>
+          <div className={`${styles["wave"]} ${styles["a"]}`}></div>
+          <div className={`${styles["wave"]}  ${styles["b"]}`}></div>
+          <div className={`${styles["wave"]}  ${styles["c"]}`}></div>
         </div>
+
+        <div>
+          <h1
+            className="font-semibold text-center text-3xl text-black pt-4 z-10 "
+            style={{ textShadow: "1px 1px 1px white" }}
+          >
+            ¿Por qué elegir Visibility Pack?
+          </h1>
+          <div className="flex flex-row justify-center mt-5 mx-auto xl:px-56 z-10">
+            <ActionsCalls
+              index="1"
+              title="Resultados garantizados"
+              text="Antes de ser puesto a la venta, cada servicio de VisibilityPack se prueba miles de veces para garantizar la máxima calidad."
+            />
+            <ActionsCalls
+              index="2"
+              title="Activación Inmediata"
+              text="¡El pedido se procesa en minutos a través de una herramienta automatizada! solo tendrá que esperar que se dispense el producto."
+            />
+            <ActionsCalls
+              index="3"
+              title="Servicio de Calidad"
+              text="Todos nuestros usuarios son reales. Cada paquete en el sitio se prueba en perfiles de muestra antes de venderse. Asistencia española garantizada H24."
+            />
+          </div>
         </div>
-    )
-}
+        <div
+          className={`${styles["skewed"]} mt-20  bg-gradient-to-b from-midnight via-vivid-purple to-midnight`}
+        >
+          <div className={`flex flex-row mx-[10%] gap-1 items-center pt-10 ${styles['revertSkewed']}`}>
+            <ActionsCallsNet title="Twitter" />
+            <ActionsCallsNet title="Spotify" />
+            <ActionsCallsNet title="Twitch" />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export default LandingPage;
