@@ -16,7 +16,7 @@ const LandingPage = () => {
       >
         <HeaderComp />
 
-        <div className="w-[80%] h-70% flex flex-row justify-center text-center items-center mt-20">
+        <section className="w-[80%] h-70% flex flex-row justify-center text-center items-center mt-20">
           <div className="flex flex-col">
             <h1 className="text-white font-semibold">
               La plataforma mas utilizada
@@ -35,22 +35,25 @@ const LandingPage = () => {
               width="500px"
             />
           </div>
-        </div>
+        </section>
 
+        {/* Efecto de olas */}
         <div className={styles["waves"]}>
           <div className={`${styles["wave"]} ${styles["a"]}`}></div>
           <div className={`${styles["wave"]}  ${styles["b"]}`}></div>
           <div className={`${styles["wave"]}  ${styles["c"]}`}></div>
         </div>
 
-        <div className="flex flex-row gap-3 mx-auto justify-center items-center pb-10 z-10 sm:w-[80%] md:w-[80%] lg:w-[60%]" >
+        <section className="flex flex-row gap-3 mx-auto justify-center items-center pb-10 z-10 sm:w-[80%] md:w-[80%] lg:w-[60%]">
           <Network title="Instagram" />
           <Network title="Facebook" />
           <Network title="YouTube" />
           <Network title="Tik Tok" />
-        </div>
+        </section>
       </div>
+
       <div className={` ${styles["second-part"]} h-screen  `}>
+        {/* Efecto de olas */}
         <div className="absolute inset-0 bg-gradient-to-b -z-10 from-blue-500 via-white to-white"></div>
         <div className={styles["waves2"]}>
           <div className={`${styles["wave"]} ${styles["a"]}`}></div>
@@ -58,7 +61,8 @@ const LandingPage = () => {
           <div className={`${styles["wave"]}  ${styles["c"]}`}></div>
         </div>
 
-        <div>
+        {/* seccion 2 */}
+        <section>
           <h1
             className="font-semibold text-center text-3xl text-black pt-4 z-10 "
             style={{ textShadow: "1px 1px 1px white" }}
@@ -82,8 +86,10 @@ const LandingPage = () => {
               text="Todos nuestros usuarios son reales. Cada paquete en el sitio se prueba en perfiles de muestra antes de venderse. Asistencia española garantizada H24."
             />
           </div>
-        </div>
-        <div
+        </section>
+
+        {/* Parte inclinada */}
+        <section
           className={`${styles["skewed"]} mt-20  bg-gradient-to-b from-midnight via-vivid-purple to-midnight`}
         >
           <div
@@ -94,17 +100,37 @@ const LandingPage = () => {
             <ActionsCallsNet title="Twitch" />
           </div>
 
-          <div className="w-full h-10 bg-white mt-20">
-              <div   className={`flex flex-row mx-[10%] gap-1 items-center pt-10 ${styles["revertSkewed"]}`}>
-
-              </div>
-        </div>
-        </div>
-
- 
-
-
+          <div className="w-full h-10 bg-white mt-20 border-2 border-white"></div>
+        </section>
       </div>
+
+      <div className="w-full bg-white pb-5">
+        <div className="flex flex-col w-full">
+          <div className="flex flex-row justify-center mx-auto xl:px-56">
+            <ActionsCalls
+              index="4"
+              title="Entrega Inmediata"
+              text="Tan pronto como se reciba el pago, nuestro equipo se activará para procesar su pedido en unos minutos. ¡Ver es creer!"
+            />
+            <ActionsCalls
+              index="5"
+              title="Soporte Constante H24"
+              text="¡El pedido se procesa en minutos a través de una herramienta automatizada! solo tendrá que esperar que se dispense el producto."
+            />
+            <ActionsCalls
+              index="6"
+              title="Mejor calidad !"
+              text="Nuestra asistencia está siempre dispuesta a dar respuesta a todas sus dudas o preguntas, escríbanos a: info@visibilitypack.es"
+            />
+          </div>
+        </div>
+        <Button className="text-pink-500 border-2 border-pink-500 font-extralight bg-white rounded-2xl p-2 my-4 mx-auto flex">
+          Descubre Nuestros Servicios
+        </Button>
+      </div>
+
+
+
     </div>
   );
 };

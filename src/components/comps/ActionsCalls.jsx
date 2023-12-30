@@ -3,6 +3,10 @@ import { Button } from "react-bootstrap";
 import { CgSandClock } from "react-icons/cg";
 import { BsGraphUpArrow } from "react-icons/bs";
 import { FaRegThumbsUp } from "react-icons/fa";
+import { MdOutlineRocketLaunch } from "react-icons/md";
+import { GrChatOption } from "react-icons/gr";
+import { HiOutlineDesktopComputer } from "react-icons/hi";
+
 
 const ActionsCalls = ({ title, index, text }) => {
   const [color, setColor] = useState("");
@@ -40,6 +44,15 @@ const ActionsCalls = ({ title, index, text }) => {
       )}
       {index === "3" && (
         <FaRegThumbsUp style={{ color: "#8A2BE2", width: "3em", height: "3em" }} />
+      )}
+        {index === "4" && (
+        <MdOutlineRocketLaunch style={{ color: "#8A2BE2", width: "3em", height: "3em" }} />
+      )}
+        {index === "5" && (
+        <GrChatOption style={{ color: "#8A2BE2", width: "3em", height: "3em" }} />
+      )}
+        {index === "6" && (
+        <HiOutlineDesktopComputer style={{ color: "#8A2BE2", width: "3em", height: "3em" }} />
       )}
       <h1 className="sm:text-xl md:text-2xl lg:text-3xl text-center font-semibold"   style={{ color: `${color}` }}>{title}</h1>
       <p className="text-xl font-normal text-center ">{text}</p>
