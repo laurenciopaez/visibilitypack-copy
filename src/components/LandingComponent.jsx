@@ -7,6 +7,8 @@ import styles from "../components/styles/LandingPage.module.css";
 import ActionsCalls from "./comps/ActionsCalls";
 import ActionsCallsNet from "./comps/ActionsCallsNet";
 import { Image } from "react-bootstrap";
+import NumberIncremental from "./comps/NumberIncremental";
+import Quotes from "./comps/Quotes";
 
 const LandingPage = () => {
   return (
@@ -127,10 +129,33 @@ const LandingPage = () => {
         <Button className="text-pink-500 border-2 border-pink-500 font-extralight bg-white rounded-2xl p-2 my-4 mx-auto flex">
           Descubre Nuestros Servicios
         </Button>
+
+        <h1 className="text-lg justify-center flex w-full">
+          Agencia especializada en Social Media Marketing! Aqui estan nuestros
+          resultados...
+        </h1>
+        <div className="sm:w-[80%] md:w-[80%] lg:w-[60%] xl:w-[80%] flex flex-row justify-center mx-auto gap-2">
+          <NumberIncremental
+            targetNumber={24365}
+            text="Clientes Satisfechos"
+            color="#FF00FF"
+          />
+          <NumberIncremental
+            targetNumber={52982}
+            text="Pedidos Cumplidos"
+            color="blue"
+          />
+          <NumberIncremental
+            targetNumber={686}
+            text="Influencers"
+            color="#8A2BE2"
+          />
+        </div>
+
+        <div className="w-full mt-20 px-12 mx-auto justify-center content-center flex mb-10">
+          <Quotes/>
+        </div>
       </div>
-
-
-
     </div>
   );
 };
