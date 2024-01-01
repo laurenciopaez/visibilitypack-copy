@@ -13,7 +13,7 @@ import Footer from "./comps/Footer";
 
 const LandingPage = () => {
   return (
-    <div className="   ">
+    <div>
       <div
         className={`w-full flex flex-col justify-center items-center bg-gradient-to-b from-vivid-purple to-midnight ${styles["landing-page"]}     `}
       >
@@ -32,7 +32,7 @@ const LandingPage = () => {
             </Button>
           </div>
 
-          <div>
+          <div className="lg:flex xl:flex hidden">
             <Image
               src="https://visibilitypack.es/wp-content/uploads/2021/02/visibilitypack0-1.png"
               width="500px"
@@ -47,7 +47,7 @@ const LandingPage = () => {
           <div className={`${styles["wave"]}  ${styles["c"]}`}></div>
         </div>
 
-        <section className="flex flex-col lg:flex-row xl:flex-row lg:gap-3 xl:gap-3 mx-auto justify-center items-center pb-10 z-10 sm:w-[80%] md:w-[80%] lg:w-[60%]">
+        <section className="flex flex-col lg:flex-row xl:flex-row lg:gap-3 xl:gap-3 mx-auto justify-center items-center pb-10 z-10  lg:w-[60%]">
           <Network title="Instagram" />
           <Network title="Facebook" />
           <Network title="YouTube" />
@@ -55,7 +55,7 @@ const LandingPage = () => {
         </section>
       </div>
 
-      <div className={` ${styles["second-part"]} h-screen  `}>
+      <div className={` ${styles["second-part"]} h-auto  `}>
         {/* Efecto de olas */}
         <div className="absolute inset-0 bg-gradient-to-b -z-10 from-blue-500 via-white to-white"></div>
         <div className={styles["waves2"]}>
@@ -65,9 +65,9 @@ const LandingPage = () => {
         </div>
 
         {/* seccion 2 */}
-        <section>
+        <section className="flex flex-col">
           <h1
-            className="font-semibold text-center text-3xl text-black pt-4 z-10 "
+            className="font-semibold text-center text-3xl text-black pt-4 "
             style={{ textShadow: "1px 1px 1px white" }}
           >
             ¿Por qué elegir Visibility Pack?
@@ -93,10 +93,10 @@ const LandingPage = () => {
 
         {/* Parte inclinada */}
         <section
-          className={`${styles["skewed"]} mt-20  bg-gradient-to-b from-midnight via-vivid-purple to-midnight`}
+          className={`${styles["skewed"]} mt-20  bg-gradient-to-b from-midnight via-vivid-purple to-midnight `}
         >
           <div
-            className={`flex flex-col lg:flex-row xl:flex-row mx-[10%] gap-1 items-center pt-10 ${styles["revertSkewed"]}`}
+            className={`flex flex-col lg:flex-row xl:flex-row mx-[10%] gap-1 items-center pt-10 pb-8 ${styles["revertSkewed"]}`}
           >
             <ActionsCallsNet title="Twitter" />
             <ActionsCallsNet title="Spotify" />
@@ -107,7 +107,7 @@ const LandingPage = () => {
         </section>
       </div>
 
-      <div className="w-full bg-white pb-5">
+      <section className="w-full bg-white pb-5">
         <div className="flex flex-col w-full">
           <div className="flex flex-col lg:flex-row xl:flex-row justify-center mx-auto xl:px-56">
             <ActionsCalls
@@ -156,7 +156,7 @@ const LandingPage = () => {
         <section className="w-full mt-20 px-12 mx-auto justify-center content-center flex mb-10 h-[150px]">
           <Quotes/>
         </section>
-      </div>
+      </section>
       <Footer/>
     </div>
   );
