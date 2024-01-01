@@ -93,7 +93,7 @@ const LandingPage = () => {
 
         {/* Parte inclinada */}
         <section
-          className={`${styles["skewed"]} mt-20  bg-gradient-to-b from-midnight via-vivid-purple to-midnight `}
+          className={`${styles["skewed"]} mt-48  bg-gradient-to-b from-midnight via-vivid-purple to-midnight `}
         >
           <div
             className={`flex flex-col lg:flex-row xl:flex-row mx-[10%] gap-1 items-center pt-10 pb-8 ${styles["revertSkewed"]}`}
