@@ -38,7 +38,7 @@ const Footer = () => {
           <h3>Pagina web creada por Laurencio Paez</h3>
           <a target="_blank" href="https://www.linkedin.com/in/laurencio-paez-727042155/" className="hover:text-blue-500 hover:cursor-pointer flex flex-row gap-2 mx-auto items-center">Linkedin <FaLinkedin />
   </a>
-          <a target="_blank" className="hover:text-green-500 items-center hover:cursor-pointer flex flex-row gap-2 mx-auto" href="https://github.com/laurenciopaez/lineru-copy">GitHub <FaGithub />
+          <a target="_blank" className="hover:text-green-500 items-center hover:cursor-pointer flex flex-row gap-2 mx-auto" href="https://github.com/laurenciopaez/visibilitypack-copy">GitHub <FaGithub />
   </a>
           <a className="hover:text-red-500 hover:cursor-pointer flex flex-row gap-2 mx-auto items-center" target="_blank" href="https://www.youtube.com/channel/UCYGzOnpX3646TLuWIs0Zy-A">Youtube <FaYoutube /></a>
         </div>
