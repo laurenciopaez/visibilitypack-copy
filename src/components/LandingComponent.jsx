@@ -21,10 +21,10 @@ const LandingPage = () => {
 
         <section className="w-[80%] h-70% flex flex-row justify-center text-center items-center mt-20">
           <div className="flex flex-col">
-            <h1 className="text-white font-semibold">
+            <h1 className="text-white font-semibold text-3xl">
               La plataforma mas utilizada
             </h1>
-            <h1 className="text-white font-semibold">
+            <h1 className="text-white font-semibold text-3xl">
               Por todos los influencers
             </h1>
             <Button className="text-pink-500 border-2 border-pink-500 font-extralight bg-white rounded-2xl p-2 my-4 w-1/2 mx-auto">

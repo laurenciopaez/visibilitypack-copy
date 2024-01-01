@@ -55,7 +55,7 @@ const ActionsCalls = ({ title, index, text }) => {
         <HiOutlineDesktopComputer style={{ color: "#8A2BE2", width: "3em", height: "3em" }} />
       )}
       <h1 className="sm:text-xl md:text-2xl lg:text-3xl text-center font-semibold"   style={{ color: `${color}` }}>{title}</h1>
-      <p className="text-xl font-normal text-center ">{text}</p>
+      <p className="text-xl font-normal text-center text-black">{text}</p>
     </div>
   );
 };
