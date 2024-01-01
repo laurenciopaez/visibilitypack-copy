@@ -107,7 +107,7 @@ const LandingPage = () => {
         </section>
       </div>
 
-      <section className="w-full bg-white pb-5">
+      <section className="w-full bg-white pb-5 text-black">
         <div className="flex flex-col w-full">
           <div className="flex flex-col lg:flex-row xl:flex-row justify-center mx-auto xl:px-56">
             <ActionsCalls
