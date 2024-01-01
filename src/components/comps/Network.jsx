@@ -34,27 +34,27 @@ const Network = ({ title }) => {
 
   return (
     <div
-      className="bg-white-700 rounded-lg shadow-lg shadow-black border-2 border-blue-900 flex flex-col px-8 gap-3 justify-center items-center pb-2 bg-white pt-3 w-1/2"
+      className="bg-white-700 rounded-lg shadow-lg shadow-black border-2 border-blue-900 flex flex-col px-8 gap-3 justify-center items-center pb-2 bg-white pt-3 w-full "
       style={{ color: `${color}` }}
     >
       {title === "Instagram" && (
         <CiInstagram
           style={{ color: "#b45309" }}
-          className="sm:w-[2em] md:w-[2em] lg:w-[3em] sm:h-[2em] md:h-[2em] lg:h-[3em] xl:w-[4em] xl:h-[4em]"
+          className="w-[4em] h-[4em]"
         />
       )}
       {title === "Facebook" && (
         <CiFacebook style={{ color: "blue" }}
-        className="sm:w-[2em] md:w-[2em] lg:w-[3em] sm:h-[2em] md:h-[2em] lg:h-[3em] xl:w-[4em] xl:h-[4em]" />
+        className="w-[4em] h-[4em]" />
       )}
       {title === "YouTube" && (
         <CiYoutube style={{ color: "red"}}
-        className="sm:w-[2em] md:w-[2em] lg:w-[3em] sm:h-[2em] md:h-[2em] lg:h-[3em] xl:w-[4em] xl:h-[4em]" />
+        className="w-[4em] h-[4em]" />
       )}
       {title === "Tik Tok" && (
         <CiMusicNote1
           style={{ color: "violet" }}
-          className="sm:w-[2em] md:w-[2em] lg:w-[3em] sm:h-[2em] md:h-[2em] lg:h-[3em] xl:w-[4em] xl:h-[4em]"
+          className="w-[4em] h-[4em]"
         />
       )}
       <h1 className="sm:text-base md:text-lg lg:text-xl ">{title}</h1>

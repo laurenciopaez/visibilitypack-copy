@@ -9,6 +9,7 @@ import ActionsCallsNet from "./comps/ActionsCallsNet";
 import { Image } from "react-bootstrap";
 import NumberIncremental from "./comps/NumberIncremental";
 import Quotes from "./comps/Quotes";
+import Footer from "./comps/Footer";
 
 const LandingPage = () => {
   return (
@@ -46,7 +47,7 @@ const LandingPage = () => {
           <div className={`${styles["wave"]}  ${styles["c"]}`}></div>
         </div>
 
-        <section className="flex flex-row gap-3 mx-auto justify-center items-center pb-10 z-10 sm:w-[80%] md:w-[80%] lg:w-[60%]">
+        <section className="flex flex-col lg:flex-row xl:flex-row lg:gap-3 xl:gap-3 mx-auto justify-center items-center pb-10 z-10 sm:w-[80%] md:w-[80%] lg:w-[60%]">
           <Network title="Instagram" />
           <Network title="Facebook" />
           <Network title="YouTube" />
@@ -71,7 +72,7 @@ const LandingPage = () => {
           >
             ¿Por qué elegir Visibility Pack?
           </h1>
-          <div className="flex flex-row justify-center mt-5 mx-auto xl:px-56">
+          <div className="flex flex-col lg:flex-row xl:flex-row justify-center mt-5 mx-auto xl:px-56">
             <ActionsCalls
               index="1"
               title="Resultados garantizados"
@@ -95,7 +96,7 @@ const LandingPage = () => {
           className={`${styles["skewed"]} mt-20  bg-gradient-to-b from-midnight via-vivid-purple to-midnight`}
         >
           <div
-            className={`flex flex-row mx-[10%] gap-1 items-center pt-10 ${styles["revertSkewed"]}`}
+            className={`flex flex-col lg:flex-row xl:flex-row mx-[10%] gap-1 items-center pt-10 ${styles["revertSkewed"]}`}
           >
             <ActionsCallsNet title="Twitter" />
             <ActionsCallsNet title="Spotify" />
@@ -108,7 +109,7 @@ const LandingPage = () => {
 
       <div className="w-full bg-white pb-5">
         <div className="flex flex-col w-full">
-          <div className="flex flex-row justify-center mx-auto xl:px-56">
+          <div className="flex flex-col lg:flex-row xl:flex-row justify-center mx-auto xl:px-56">
             <ActionsCalls
               index="4"
               title="Entrega Inmediata"
@@ -134,7 +135,7 @@ const LandingPage = () => {
           Agencia especializada en Social Media Marketing! Aqui estan nuestros
           resultados...
         </h1>
-        <section className="sm:w-[80%] md:w-[80%] lg:w-[60%] xl:w-[80%] flex flex-row justify-center mx-auto gap-2">
+        <section className="sm:w-[80%] md:w-[80%] lg:w-[60%] xl:w-[80%] flex flex-col lg:flex-row xl:flex-row justify-center mx-auto gap-2 items-center">
           <NumberIncremental
             targetNumber={24365}
             text="Clientes Satisfechos"
@@ -152,10 +153,11 @@ const LandingPage = () => {
           />
         </section>
 
-        <section className="w-full mt-20 px-12 mx-auto justify-center content-center flex mb-10">
+        <section className="w-full mt-20 px-12 mx-auto justify-center content-center flex mb-10 h-[150px]">
           <Quotes/>
         </section>
       </div>
+      <Footer/>
     </div>
   );
 };
