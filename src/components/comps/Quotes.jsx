@@ -23,7 +23,7 @@ const Quotes = () => {
   useEffect( () => {
     const intervalId = setInterval( () => {
         setCurrentQuote( (prevQuote) => (prevQuote+1) % quotesData.length);
-    }, 2500)
+    }, 6000)
 
     return () => clearInterval(intervalId)
   }, currentQuote, quotesData.length)
@@ -32,7 +32,7 @@ const Quotes = () => {
     <div className="flex overflow-hidden w-full justify-center content-center">
     <div className="flex space-x-4">
       <button onClick={prevQuote}>&lt;</button>
-      <div className="w-full">
+      <div className="w-full flex items-center">
         <Quote monto={quotesData[currentQuote]} />
       </div>
       <button onClick={nextQuote}>&gt;</button>

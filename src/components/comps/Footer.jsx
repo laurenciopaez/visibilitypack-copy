@@ -20,7 +20,7 @@ const Footer = () => {
             </div>
                 
             </div>
-            <div className="flex flex-col text-white w-1/3 mb-4">
+            <div className="flex flex-col text-white w-1/3 ">
                 <p className="hover:cursor-pointer">Terminos y condiciones</p>
                 <p className="hover:cursor-pointer">Privacy Policy</p>
                 <p className="hover:cursor-pointer">Cookie Policy</p>
