@@ -134,7 +134,7 @@ const LandingPage = () => {
           Agencia especializada en Social Media Marketing! Aqui estan nuestros
           resultados...
         </h1>
-        <div className="sm:w-[80%] md:w-[80%] lg:w-[60%] xl:w-[80%] flex flex-row justify-center mx-auto gap-2">
+        <section className="sm:w-[80%] md:w-[80%] lg:w-[60%] xl:w-[80%] flex flex-row justify-center mx-auto gap-2">
           <NumberIncremental
             targetNumber={24365}
             text="Clientes Satisfechos"
@@ -150,11 +150,11 @@ const LandingPage = () => {
             text="Influencers"
             color="#8A2BE2"
           />
-        </div>
+        </section>
 
-        <div className="w-full mt-20 px-12 mx-auto justify-center content-center flex mb-10">
+        <section className="w-full mt-20 px-12 mx-auto justify-center content-center flex mb-10">
           <Quotes/>
-        </div>
+        </section>
       </div>
     </div>
   );
